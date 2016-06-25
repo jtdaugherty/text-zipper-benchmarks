@@ -1,5 +1,5 @@
 name:                text-zipper-benchmarks
-version:             0.3.1
+version:             0.4
 synopsis:            Benchmarks for text-zipper
 description:         This package provides benchmarks for the text-zipper library.
 license:             BSD3
@@ -21,6 +21,6 @@ executable text-zipper-benchmarks
   Main-is:             Main.hs
   build-depends:       base < 5,
                        criterion,
-                       text-zipper,
+                       text-zipper == 0.4,
                        deepseq,
                        text
