@@ -1,0 +1,26 @@
+name:                text-zipper-benchmarks
+version:             0.3.1
+synopsis:            Benchmarks for text-zipper
+description:         This package provides benchmarks for the text-zipper library.
+license:             BSD3
+license-file:        LICENSE
+author:              Jonathan Daugherty <cygnus@foobox.com>
+maintainer:          cygnus@foobox.com
+copyright:           (c) 2016 Jonathan Daugherty
+category:            Text
+build-type:          Simple
+cabal-version:       >=1.10
+
+Source-Repository head
+  type:     git
+  location: git://github.com/jtdaugherty/text-zipper-benchmarks.git
+
+executable text-zipper-benchmarks
+  hs-source-dirs:      programs/benchmarks
+  ghc-options:         -Wall
+  Main-is:             Main.hs
+  build-depends:       base < 5,
+                       criterion,
+                       text-zipper,
+                       deepseq,
+                       text
